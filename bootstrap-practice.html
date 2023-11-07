@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Practice</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <style>
+    html {
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light shadow px-5 fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-dark" href="#home">BOOTSTRAP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav nav-pills fw-medium">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#carousel">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#servcies" role="button"
+              aria-expanded="false">Services</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#master-web-development">Master Web Development</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#craft-stunning-website">Craft Stunning Website</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#journey-web-development">Start Web Development</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="p-5" id="home">
+    <div class="row mt-5 text-center">
+      <div class="col-md-7 my-auto">
+        <h1 class="display-3 fw-bold">💻 WEB DEVELOPMENT</h1>
+        <p>
+          Our guide covers the essentials from HTML to JavaScript, helping you
+          create functional <br />websites on your journey to becoming a web
+          developer.
+        </p>
+        <button class="btn btn-primary text-light fw-bold p-3">
+          Start your Journey!
+        </button>
+      </div>
+      <div class="col-md-5">
+        <img class="img-fluid" src="images/hero-image.png" alt="Web Development" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- CAROUSEL -->
+    <section id="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/web-development-basics-image.avif" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Web Development Basics</h5>
+              <p>
+                Covers fundamental concepts and tools for web development.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/types-of-web-development-image.avif" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Types of Web Development</h5>
+              <p>
+                Exploring Various Types of Web Development: Backend vs.
+                Frontend
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/mobile-app-development-image.avif" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mobile App Development</h5>
+              <p>
+                Developed mobile app development for iOS and Android
+                platforms, extending your reach to a broader audience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ASIDE -->
+    <section>
+      <div class="container-fluid bg-primary text-white p-5 mt-5 text-center">
+        <h2 class="fw-bold p-5">
+          Unlock Your Potential with Our Web Development Bootcamp: Where
+          Learning Meets Innovation. Join us on a journey to master the art of
+          web development and shape the digital future.
+        </h2>
+        <img class="img-fluid" style="width: 10rem" src="images/web-developer-image.webp" alt="" />
+      </div>
+    </section>
+
+    <!-- CARDS -->
+    <section id="services">
+      <div class="row p-5 d-flex flex-row text-center">
+        <div class="col-md-4 p-5" id="master-web-development">
+          <div class="card">
+            <img src="images/master-development-image.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                Master the Full Spectrum of Web Development
+              </h5>
+              <p class="card-text">
+                Bootcamp that covers both frontend and backend development.
+                Learn HTML, CSS, JavaScript, and essential back-end
+                technologies. You'll be ready to create dynamic web
+                applications from scratch.
+              </p>
+              <a href="#" class="btn btn-primary p-3">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-5" id="craft-stunning-website">
+          <div class="card">
+            <img src="images/stunning-website-image.avif" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Craft Visually Stunning Websites</h5>
+              <p class="card-text">
+                Join our intensive frontend development bootcamp, where you'll
+                focus on HTML, CSS, and JavaScript. Acquire the skills to
+                design responsive and captivating user interfaces for websites
+                and web applications.
+              </p>
+              <a href="#" class="btn btn-primary mt-2 p-3">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-5" id="journey-web-development">
+          <div class="card">
+            <img src="images/journey-web-development-image.avif" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                Start Your Journey in Web Development
+              </h5>
+              <p class="card-text">
+                Perfect for beginners, this bootcamp provides a gentle
+                introduction to web development. Learn the basics of HTML,
+                CSS, and JavaScript, and gain a solid foundation for your
+                future in web development.
+              </p>
+              <a href="#" class="btn btn-primary p-3">Begin Your Adventure</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="container-fluid bg-dark text-white text-center p-4">
+      <p class="display-4 fw-bold">Connect with Us</p>
+      <hr />
+      <p class="fw-bold">bootstrap@email.com</p>
+      <p>European Street, Toril, Davao City, Philippines</p>
+      <p>(01) 123 456</p>
+      <a href="#" class="text-decoration-none">Terms - Policy</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
